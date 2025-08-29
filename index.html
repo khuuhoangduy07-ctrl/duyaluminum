@@ -1,46 +1,42 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cửa hàng xe mô hình</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cửa hàng xe mô hình</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar">
-<h1>Cửa hàng xe mô hình</h1>
-<ul>
-<li><a href="#">Trang chủ</a></li>
-<li><a href="#">Sản phẩm</a></li>
-<li><a href="#">Liên hệ</a></li>
-</ul>
-</nav>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>Cửa hàng xe mô hình</h1>
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Sản phẩm</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </nav>
 
+  <!-- Bộ lọc -->
+  <div class="filters">
+    <button onclick="filterProducts('Tất cả')">Tất cả</button>
+    <button onclick="filterProducts('Hotwheels')">Hotwheels</button>
+    <button onclick="filterProducts('MiniGt')">MiniGt</button>
+    <button onclick="filterProducts('Tarmac')">Tarmac</button>
+    <button onclick="filterProducts('Poprace')">Poprace</button>
+    <button onclick="filterProducts('Inno64')">Inno64</button>
+  </div>
 
-<!-- Bộ lọc -->
-<div class="filters">
-<button onclick="filterProducts('Tất cả')">Tất cả</button>
-<button onclick="filterProducts('Hotwheels')">Hotwheels</button>
-<button onclick="filterProducts('MiniGt')">MiniGt</button>
-<button onclick="filterProducts('Tarmac')">Tarmac</button>
-<button onclick="filterProducts('Poprace')">Poprace</button>
-<button onclick="filterProducts('Inno64')">Inno64</button>
-</div>
+  <!-- Danh sách sản phẩm -->
+  <div id="product-grid" class="grid"></div>
 
+  <!-- Giỏ hàng -->
+  <div class="cart">
+    <h2>Giỏ hàng</h2>
+    <ul id="cart-list"></ul>
+  </div>
 
-<!-- Danh sách sản phẩm -->
-<div id="product-grid" class="grid"></div>
-
-
-<!-- Giỏ hàng -->
-<div class="cart">
-<h2>Giỏ hàng</h2>
-<ul id="cart-list"></ul>
-</div>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
